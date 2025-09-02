@@ -7,7 +7,7 @@
 
 
 //facciamo scegliere all'utente pari o dispari e un numero tra 1 e 5
-let puntata = prompt("Scegli tra pari o dispari!");
+let puntata = prompt("Scegli tra pari o dispari!").toLowerCase();
 let userNum = parseInt(prompt("inserisci un numero da 1 a 5"));
 console.log("hai scelto:" , puntata);
 console.log("hai scelto il numero:" , userNum);
