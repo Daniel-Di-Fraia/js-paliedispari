@@ -12,11 +12,9 @@ let userNum = parseInt(prompt("inserisci un numero da 1 a 5"));
 console.log("hai scelto:" , puntata);
 console.log("hai scelto il numero:" , userNum);
 
-
 //valore casuale del pc
 let pcNum = randomVal();
 console.log("Il numero della macchina è:" , pcNum);
-
 
 //somma del numero inserito dall'utente e il valore casuale del pc
 let totale = userNum + pcNum;
@@ -34,9 +32,6 @@ if(check === puntata){
 } else {
     console.log("Noo! Hai perso.");
 }
-
-
-
 
 // funzione per il numero random da 1 a 5 che darà la macchina
 function randomVal() {
