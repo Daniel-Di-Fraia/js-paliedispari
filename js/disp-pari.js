@@ -20,11 +20,11 @@ console.log("Il numero della macchina è:" , pcNum);
 let totale = userNum + pcNum;
 console.log("La somma tra i 2 numeri è:" , totale);
 
-//variabile per verificare il vincitore
-let check;
-
 //stampa del risultato, se pari o dispari
 console.log(pariDispari(totale));
+
+//variabile per verificare il vincitore
+let check = pariDispari(totale);
 
 //condizioni per verificare chi ha vinto
 if(check === puntata){
@@ -41,9 +41,8 @@ function randomVal() {
 //funzione per verificare se il risultato è pari o dispari
 function pariDispari(totale){ 
     if(totale % 2 === 0){
-        check = "pari";
+        return "pari";
     } else {
-        check = "dispari";
+        return  "dispari";
     }
-    return check;
 }
